@@ -15,3 +15,14 @@ function divide(sum, num) {
         return alert('Nice Try')
     return sum / num;
 }
+
+function operate(operator, sum, num) {
+    if (operator === '+')
+        return add(sum, num);
+    else if (operator === '-')
+        return subtract(sum, num);
+    else if (operator === '*')
+        return multiply(sum, num);
+    else 
+        return divide(sum, num);
+}
