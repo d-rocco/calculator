@@ -26,3 +26,29 @@ function operate(operator, sum, num) {
     else 
         return divide(sum, num);
 }
+
+const container = document.querySelector('.container');
+const numberButtons = container.querySelectorAll('.num-btn');
+let displayValue = [];
+numberButtons.forEach((button) => {
+    button.addEventListener('click', function(e) {
+        console.log(e.target.innerText)
+        if (displayValue.length === 9){
+            alert('no space left for displaying numbers')
+        } else if (e.target.innerText === '0' && (!displayValue || !displayValue.length)) {
+            alert('cannot input 0 as first number');
+        } else {
+            let num = parseInt(e.target.innerText);
+            displayValue.push(num);
+            console.log(displayValue);
+            currentDisplay(displayValue);
+        }
+    })
+});
+
+const display = document.querySelector('.display'); 
+function currentDisplay(displayValue) {
+    let displayNumber = parseInt(displayValue.join('')); 
+    console.log(displayNumber);
+    display.textContent = displayNumber;
+}
