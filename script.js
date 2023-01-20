@@ -114,3 +114,9 @@ operatorButtons.forEach((button) => {
         console.log(calcStorage);
     })
 })
+// Plus/Minus Button Functionality
+const plusMinusButton = container.querySelector('.plus-minus-btn');
+plusMinusButton.addEventListener('click', function() {
+    calcStorage.displayNum = -calcStorage.displayNum;
+    display.textContent = calcStorage.displayNum;
+})

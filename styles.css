@@ -8,7 +8,7 @@ body {
     align-items: center;
     margin: 100px auto;
     height: 335px;
-    width: 300px;
+    width: 325px;
     background-color: #27187E;
     border-radius: 10px;
 }
@@ -66,6 +66,10 @@ button {
     border: none;
     color: #F3F3F3;
     border-radius: 2.5px;
+}
+
+button:active {
+    background-color: #179b28;
 }
 
 .num-btn {
