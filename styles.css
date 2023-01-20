@@ -1,3 +1,73 @@
+body {
+    background-color: #F3F3F3;
+}
+
 .container {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+    height: 335px;
+    width: 300px;
+    background-color: #27187E;
+    border-radius: 10px;
+}
+
+.display {
+    color: #F3F3F3;
+    text-align: right;
+    font-size: 60px;
+    width: 92%;
+    background-color: #AA4465;
+    margin: 8px auto 2px auto; 
+    border-radius: 5px;
+    padding-right: 5px;
+}
+
+.clear-row,
+.top-third,
+.middle-third,
+.bottom-third,
+.zero-row {
+    display: flex;
+    width: 95%;
+}
+
+.clear-btn {
+    flex-grow: 0.60;
+    font-size: 35px;
+    margin: 2px 2px;
+    color:#F3F3F3;
+    background-color: #AA4465;
+}
+
+.clear-row .operator-btn,
+.plus-minus-btn {
+    flex-grow: .40;
+    margin: 2px 2px;
+    font-size: 20px;
+}
+
+.num-btn,
+.operator-btn {
+    flex-grow: 1;
+    font-size: 20px;
+    height: 46px;
+    margin: 2px 2px;
+}
+
+.operator-btn,
+.plus-minus-btn {
+    color: #F3F3F3;
+    background-color: #8F5C38;
+ }
+
+button {
+    border: none;
+    color: #F3F3F3;
+    border-radius: 2.5px;
+}
+
+.num-btn {
+    background-color: #758BFD;
 }
